@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var inputLabel: UILabel!
-    
     @IBOutlet var inputBtns: [UIButton]!
     
     override func viewDidLoad() {
@@ -20,7 +19,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnPressed(_ sender: UIButton) {
-        inputLabel.text = sender.currentTitle
+        //for taking input and displaying it//
+        inputLabel.text = inputLabel.text! + String(sender.currentTitle!)
+        
+    }
+    //function to clear last character on "del" being pressed//
+    func delPressed(str: String){
+        var newValue = str
+        newValue.remove(at: newValue.index(before: newValue.endIndex))
+        print(newValue)
     }
 }
 
