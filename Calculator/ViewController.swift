@@ -19,9 +19,29 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnPressed(_ sender: UIButton) {
-        //for taking input and displaying it//
-        inputLabel.text = inputLabel.text! + String(sender.currentTitle!)
+        var currentVal = inputLabel.text!
         
+        //to accept input//
+        switch (sender.currentTitle!) {
+        //for numbers//
+        case "0", "1","2","3","4","5","6","7","8","9":
+            if(currentVal == "0" ) {
+                inputLabel.text = "0"
+            }else {
+                currentVal = currentVal + sender.currentTitle!
+            }
+        //for Del -clears last character//
+        case "Del":
+            currentVal.remove(at: currentVal.index(before: currentVal.endIndex))
+        case ".":
+            if(!currentVal.contains(".")){
+                currentVal = currentVal + "."
+            }
+        default:
+            break
+        }
+        //to display values in input//
+        inputLabel.text = currentVal
     }
     //function to clear last character on "del" being pressed//
     func delPressed(str: String){
