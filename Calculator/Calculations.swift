@@ -13,13 +13,19 @@ class Calculations {
     var secondNum: Double?
     var operation: String?
     
-   /* func calculate() -> Double {
+    func calculate() -> Double? {
         if (operation != nil){
             if (firstNum != nil){
                 if (secondNum != nil){
                     switch operation {
                     case "+" :
-                        return (firstNum! + secondNum!)
+                         return (firstNum! + secondNum!)
+                    case "-" :
+                        return (firstNum! - secondNum!)
+                    case "*" :
+                        return (firstNum! * secondNum!)
+                    case "/" :
+                        return (firstNum! / secondNum!)
                     default:
                         return nil
                     }
@@ -30,5 +36,6 @@ class Calculations {
         }else {
             return nil
         }
-    }*/
+     return 0
+    }
 }
