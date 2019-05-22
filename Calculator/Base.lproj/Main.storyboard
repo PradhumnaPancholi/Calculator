@@ -285,14 +285,81 @@
                                     <constraint firstAttribute="height" constant="80" id="3Xk-RK-cuY"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="U3r-Hd-q1p">
+                                <rect key="frame" x="50" y="147" width="275" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybt-lq-XaS">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="80"/>
+                                        <color key="backgroundColor" red="0.43052860920000002" green="0.62630276920000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7D3-kz-Kkm"/>
+                                            <constraint firstAttribute="width" constant="50" id="pef-dd-YQq"/>
+                                        </constraints>
+                                        <state key="normal" title="sq">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AbU-om-LJy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRv-Y9-YSn">
+                                        <rect key="frame" x="75" y="0.0" width="50" height="80"/>
+                                        <color key="backgroundColor" red="0.43052860920000002" green="0.62630276920000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="6z1-47-DLv"/>
+                                            <constraint firstAttribute="height" constant="50" id="SwH-l5-YIR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="sq_root">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="595-05-3WV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4d-Cr-Opn">
+                                        <rect key="frame" x="150" y="0.0" width="50" height="80"/>
+                                        <color key="backgroundColor" red="0.43052860920000002" green="0.62630276920000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="F30-tK-g0w"/>
+                                            <constraint firstAttribute="width" constant="50" id="J36-FJ-PLk"/>
+                                        </constraints>
+                                        <state key="normal" title=".">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIx-eP-5Di"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UY1-bq-t3W">
+                                        <rect key="frame" x="225" y="0.0" width="50" height="80"/>
+                                        <color key="backgroundColor" red="0.43052860920000002" green="0.62630276920000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="C8y-jT-LyH"/>
+                                            <constraint firstAttribute="height" constant="50" id="tOe-RS-n15"/>
+                                        </constraints>
+                                        <state key="normal" title="=">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XdV-Vw-vmn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="sYF-nv-a3t"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.24524829393502662" green="0.35676998541019095" blue="0.56964459196891193" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="2Pf-Rx-xeN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="8Ng-5d-lkO"/>
+                            <constraint firstItem="U3r-Hd-q1p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fh0-zZ-mc4"/>
                             <constraint firstItem="IYL-TD-ibW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JJb-pw-zBv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mqN-fn-Ku1" secondAttribute="bottom" constant="40" id="SBN-W3-VnE"/>
                             <constraint firstItem="mqN-fn-Ku1" firstAttribute="top" secondItem="IYL-TD-ibW" secondAttribute="bottom" constant="19" id="a03-9Q-nEk"/>
                             <constraint firstItem="mqN-fn-Ku1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b7F-78-cXS"/>
+                            <constraint firstItem="hbF-4R-BJn" firstAttribute="top" secondItem="U3r-Hd-q1p" secondAttribute="bottom" constant="25" id="bHJ-I9-TUf"/>
                             <constraint firstItem="2Pf-Rx-xeN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ddh-Y9-oRk"/>
                             <constraint firstItem="hbF-4R-BJn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="drH-zU-9fF"/>
                             <constraint firstItem="lDl-D8-URu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nhP-XE-gCm"/>
@@ -319,11 +386,15 @@
                         <outletCollection property="inputBtns" destination="q2v-dH-gjz" collectionClass="NSMutableArray" id="PcC-Pi-GV9"/>
                         <outletCollection property="inputBtns" destination="AU4-oF-4xO" collectionClass="NSMutableArray" id="8Gx-lL-neh"/>
                         <outletCollection property="inputBtns" destination="MpY-Ne-sT2" collectionClass="NSMutableArray" id="1jt-pK-8OJ"/>
+                        <outletCollection property="inputBtns" destination="Ybt-lq-XaS" collectionClass="NSMutableArray" id="1Vc-mq-PPZ"/>
+                        <outletCollection property="inputBtns" destination="eRv-Y9-YSn" collectionClass="NSMutableArray" id="h15-cb-Iy7"/>
+                        <outletCollection property="inputBtns" destination="v4d-Cr-Opn" collectionClass="NSMutableArray" id="Clz-eB-aet"/>
+                        <outletCollection property="inputBtns" destination="UY1-bq-t3W" collectionClass="NSMutableArray" id="JEU-Mz-KS5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-180" y="62.518740629685162"/>
+            <point key="canvasLocation" x="10" y="48"/>
         </scene>
     </scenes>
 </document>
